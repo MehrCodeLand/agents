@@ -1,0 +1,23 @@
+[project]
+name = "bank_agent"
+version = "0.1.0"
+description = "bank_agent using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.117.1,<1.0.0"
+]
+
+[project.scripts]
+bank_agent = "bank_agent.main:run"
+run_crew = "bank_agent.main:run"
+train = "bank_agent.main:train"
+replay = "bank_agent.main:replay"
+test = "bank_agent.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

@@ -1,0 +1,41 @@
+financial_advisory_task:
+  description: >
+    Research the latest banking products, services, and financial trends related to {topic}.
+    Identify the most relevant and beneficial options for different customer segments.
+    Consider factors such as interest rates, fees, accessibility, and customer preferences
+    in the current year {current_year}.
+  expected_output: >
+    A concise list of 5-7 banking recommendations with brief explanations of their benefits.
+    Each recommendation should be tailored to specific customer needs and financial goals.
+  agent: financial_advisor
+
+customer_service_task:
+  description: >
+    Review common customer inquiries and concerns about banking services.
+    Prepare clear, helpful responses to these questions that build trust and demonstrate expertise.
+    Focus on explaining complex banking terms and processes in simple language.
+  expected_output: >
+    A set of customer-friendly responses to frequent banking questions.
+    Each response should be clear, accurate, and designed to enhance customer satisfaction.
+  agent: customer_service
+
+analysis_task:
+  description: >
+    Analyze the information gathered about {topic} and create a comprehensive report.
+    Identify key insights, trends, and opportunities for banking customers.
+    Compare different financial products and highlight their strengths and limitations.
+  expected_output: >
+    A detailed analysis report with sections covering different aspects of {topic}.
+    The report should include data-driven insights and practical recommendations.
+  agent: banking_analyst
+
+knowledge_query_task:
+  description: >
+    Research the user's banking-related question using the Knowledge Base Query Tool.
+    First, understand what financial information the user is looking for.
+    Then, use the Knowledge Base Query Tool to find relevant banking information.
+    Finally, synthesize a comprehensive answer that addresses the user's financial needs.
+  expected_output: >
+    A detailed answer to the user's banking question based on the knowledge base information.
+    The answer should be accurate, helpful, and presented in a customer-friendly manner.
+  agent: financial_advisor

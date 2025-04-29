@@ -1,0 +1,28 @@
+[project]
+name = "bankagent"
+version = "0.1.0"
+description = "Banking Agent using crewAI with RAG capabilities"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.117.1,<1.0.0",
+    "langchain>=0.1.0",
+    "langchain-community>=0.0.19",
+    "langchain-huggingface>=0.0.1",
+    "sentence-transformers>=2.2.2",
+    "qdrant-client>=1.7.0",
+    "pydantic>=2.0.0",
+    "streamlit>=1.32.0"
+]
+
+[project.scripts]
+bankagent = "mydcagent.main:run"
+run_crew = "mydcagent.main:run"
+bank_rag = "mydcagent.main:run_rag"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
